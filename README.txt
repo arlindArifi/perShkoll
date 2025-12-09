@@ -1,14 +1,151 @@
-Inventory Project - Neon Dark UI
-Generated: 2025-12-04T22:07:16.551024Z
+📦 Inventory Management System – Përshkrimi i Projektit
 
-How to use:
-1) Copy this folder to your XAMPP/WAMP htdocs (e.g. htdocs/inventar)
-2) Import inventar_pc_dark.sql into MySQL (phpMyAdmin)
-3) Edit db.php if your DB credentials are different
-4) Open http://localhost/inventar/dashboard.php
-5) Default users in DB: admin/admin123, staff/staff123
+Ky projekt është një sistem menaxhimi të inventarit, i ndërtuar për shkolla ose kompani të vogla. Përfshin panel të veçantë për admin dhe user, me funksione të kontrolluara sipas rolit.
 
-Notes:
-- This is a sample project scaffold generated for your school project.
-- Passwords in sample DB are plaintext; replace with password_hash in production.
-- You can remove or add files as needed.
+Sistemi është i ndërtuar me teknologji bazike dhe të lehta për përdorim:
+
+PHP
+
+MySQL
+
+HTML, CSS, JavaScript
+
+Chart.js
+
+XAMPP (Apache + MySQL)
+
+🚀 Karakteristikat Kryesore
+1. Login System (Admin & User)
+
+Sistemi ka një faqe hyrëse ku përdoruesi fut username dhe password.
+Në varësi të rolit, sistemi e dërgon përdoruesin në panelin përkatës:
+
+Admin Panel
+
+User Panel
+
+2. Admin Panel
+
+Admini ka qasje të plotë në sistem dhe mund të menaxhojë të gjitha të dhënat.
+Funksionalitetet përfshijnë:
+
+Dashboard me statistika
+
+Menaxhimin e produkteve (shtim, editim, fshirje)
+
+Menaxhimin e furnizuesve
+
+Menaxhimin e përdoruesve
+
+Menaxhimin e shitjeve
+
+Ndryshimin e cilësimeve të sistemit (si p.sh. dark mode)
+
+Daljen nga sistemi
+
+3. User Panel
+
+Përdoruesi i thjeshtë ka një panel më të kufizuar.
+Mund të:
+
+Shikojë dashboard-in e tij
+
+Shikojë listën e produkteve
+
+Shikojë furnizuesit
+
+Shkyçet nga sistemi
+
+Nuk ka të drejta për të modifikuar të dhëna.
+
+4. Sidebar Automatik
+
+Navigimi anësor (sidebar) ndryshon automatikisht bazuar në rolin e përdoruesit.
+Admini sheh opsionet e tij, ndërsa user-i sheh një version më të thjeshtë.
+
+🌙 Light & Dark Mode
+
+Përdoruesi mund të zgjedhë mes:
+
+Dark Mode
+
+Light Mode
+
+Zgjedhja ruhet automatikisht dhe ngarkohet çdo herë që hapet faqja.
+
+📊 Dashboard (Admin)
+
+Përfshin:
+
+Numrin total të produkteve
+
+Produktet me stok të ulët
+
+Vlerën totale të stokut
+
+Statuse si OK, Defekt, Në Servis
+
+Pajisjet e fundit të shtuar
+
+Grafikun me produktet kryesore sipas stokut
+
+📁 Struktura e Projektit
+
+Projekti është i organizuar në disa dosje:
+
+assets (CSS, JavaScript, imazhe)
+
+partials (header, footer, sidebar)
+
+faqet kryesore (dashboard, products, suppliers, sales, users, settings)
+
+sistemi i login-it
+
+database (skedari SQL)
+
+🔧 Instalimi
+
+Instaloni XAMPP.
+
+Vendosni projektin në folderin htdocs.
+
+Importoni databazën me phpMyAdmin.
+
+Ndryshoni të dhënat e lidhjes në db.php nëse duhet.
+
+Hapeni projektin në browser duke shkruar:
+http://localhost/inv/
+
+🔐 Fjalëkalimet Parazgjedhje
+
+Admin:
+
+Username: admin
+
+Password: admin
+
+User:
+
+Username: user
+
+Password: user
+
+🧪 Funksionimi i Role-Based Access
+
+Sistemi kontrollon rolin e përdoruesit dhe kufizon qasjen në faqet që nuk i takojnë atij roli.
+
+🔥 Çfarë mund të shtohet në të ardhmen
+
+Sistem për backup dhe restore të databazës
+
+Eksporim të të dhënave në Excel/PDF
+
+Notifikime për stok të ulët
+
+Statistikë shtesë
+
+Log i aktiviteteve të përdoruesve
+
+📄 Licenca
+
+Ky projekt është i thjeshtë për përdorim edukativ dhe mund të modifikohet sipas nevojës.
